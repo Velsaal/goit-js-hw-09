@@ -1,9 +1,4 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -16,3 +11,33 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 24px; 
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+}
+
+
+.gallery-item {
+  width: calc((100% - 2 * 24px) / 3); 
+  margin: 0; 
+  overflow: hidden;
+  transition: transform 0.3s ease; 
+}
+
+
+.gallery-image {
+  display: block;
+  width: 100%; 
+  height: auto;
+  
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); 
+}
+
